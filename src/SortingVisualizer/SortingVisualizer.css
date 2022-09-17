@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+html, body {
+    background-color: var(--color-bg);
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.6);
+    --transition: all 600ms ease;
+    overflow:scroll;
+}
+
+.array-container {
+    width:100%;
+    position: relative;
+    margin: 3rem auto;
+    
+}
+
+.array-bar {
+    width: 5px;
+    background-color: var(--color-primary);
+    display: inline-block;
+    margin: 4px 4px;
+}
+
+.array-bar:hover {
+    background-color: red;
+}
+
+.button-container {
+    background-color: var(--color-bg);
+    border-radius: 1.5rem;
+    color: var(--color-primary);
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid white;
+    margin: 2rem 3rem;
+}
+
+.button-container:hover {
+    background-color: var(--color-bg-variant);
+    color:var(--color-white);
+}
+
+.button-container:active, .reset-button:active {
+    background-color: var(--color-white);
+    color: black;
+}
+
+.title-container {
+    font-size: 5rem;
+    color: var(--color-white);
+    background-color: var(--color-bg-variant);
+    
+  position:relative;
+  top: 0;
+  
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  
+  -webkit-mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
+          mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
+    
+}
+
+.reset-button {
+    margin-bottom: 2rem;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: var(--color-bg-variant);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.sort-explanations {
+    text-align: left;
+    background-color: var(--color-bg-variant);
+}
+
+.sort-explanation {
+    padding: 3rem 1.5rem;
+    color: var(--color-light);
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+}
+
+.explanation {
+    margin: 1.5rem;
+    background-color: var(--color-bg);
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-light);
+}
+
+p {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    text-align: left;
+    margin: auto 2px;
+}
