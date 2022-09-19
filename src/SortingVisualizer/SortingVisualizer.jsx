@@ -74,7 +74,6 @@ export default class SortingVisualizer extends React.Component {
                     Sorting Algorithm Visualizer
                 </div>
             <button className='button-container' onClick={() => this.mergeSort()}>Merge Sort</button>
-            <button className='button-container' onClick={ () => this.quickSort()}>Quick Sort</button>
             <div className='array-container'>
             {array.map((value,idx) => (
                 <div className="array-bar" key={idx} style={{height: `${value}px`}}>
@@ -90,14 +89,6 @@ export default class SortingVisualizer extends React.Component {
                     <div className="explanation">
                         <p>Merge sort is a comparing-based algorithm takes an array and recursively halfs the array until it is impossible. Each element is compared 
                             and merged to a larger array until the size is of the original array. This method is also known as Divide and Conquer!
-                        </p>
-                    </div>
-                </div>
-                <div className="sort-explanation">
-                    <h2>Quick Sort</h2>
-                    <div className="explanation">
-                        <p>Quick sort is a comparing-based algorithm takes an element in an array as a pivot, in which the array is partitioned around the pivot. This
-                            algorithm is also known as Divide nd Conquer!
                         </p>
                     </div>
                 </div>
